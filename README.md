@@ -35,7 +35,7 @@ Real drinks are welcome. Visiting the shop is not required.
 
 ## How it is graded
 
-6 test points for structure: skeleton and head, the captioned figure, the description list, the nested list, the quote with its source, and the peso reference. 4 rubric points for choosing the right element for each part.
+6 test points for structure: skeleton and head, the captioned figure with its photo file, the description list, the nested list, the quote with its source, and the peso reference. 4 rubric points for choosing the right element for each part.
 
 Every activity also checks `student.json`: fill in your full name, student number, school email, class code **2006**, GitHub username, `room` and `pcNumber`, all as text.
 

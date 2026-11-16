@@ -39,6 +39,8 @@ describe("M3A2: Sip Trail Drink Profile", () => {
     const fig = page.querySelector("figure")
     expect(fig?.querySelector("img")?.getAttribute("alt")?.trim().length ?? 0, "Put an img with alt text inside a figure.").toBeGreaterThan(5)
     expect(fig?.querySelector("figcaption")?.textContent.trim().length ?? 0, "Caption the image with figcaption.").toBeGreaterThan(3)
+    const file = fig?.querySelector("img")?.getAttribute("src") ?? ""
+    expect(/^https?:/.test(file) || (file !== "" && existsSync(new URL(file, src))), `Put the photo in src/images/ and point src at it (found "${file}").`).toBe(true)
   })
   it("gives the drink's details in a description list", () => {
     const dl = page.querySelector("dl")
